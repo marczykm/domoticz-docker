@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 EXPOSE 8080
 
-RUN apt-get update && apt-get install -y wget libcurl4-openssl-dev sudo netcat
+RUN apt-get update && apt-get install -y wget libcurl4-openssl-dev sudo netcat python3 python3-dev libpython3.5
 RUN mkdir /root/domoticz
 WORKDIR /root/domoticz
 RUN wget https://releases.domoticz.com/releases/release/domoticz_linux_armv7l.tgz
